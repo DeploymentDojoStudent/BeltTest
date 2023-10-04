@@ -41,3 +41,8 @@ This is an example to show-case shortcuts.
     <Shortcut Directory="DesktopFolderb" Name="Deployment Dojo Windows Forms App 1" />
 </File>	
 ```
+
+## Episode 23 - A less short look into Advertised Shortcuts using WiX v4
+
+> :movie_camera: [Youtube](https://www.youtube.com/watch?v=x-E7g5H_1TA)
+
