@@ -1,9 +1,10 @@
 ﻿<Project Sdk="WixToolset.Sdk/4.0.2">
-	<PropertyGroup>
-		<BuildVersion>0</BuildVersion>
-		<DefineConstants>Version=$(BuildVersion)</DefineConstants>
-	</PropertyGroup>
-	<ItemGroup>
-		<ProjectReference Include="..\ConsoleApp1\ConsoleApp1.csproj" />
-	</ItemGroup>
+  <PropertyGroup>
+    <BuildVersion>0</BuildVersion>
+    <DefineConstants>Version=$(BuildVersion)</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ConsoleApp1\ConsoleApp1.csproj" />
+    <ProjectReference Include="..\WinFormsApp1\WinFormsApp1.csproj" />
+  </ItemGroup>
 </Project>

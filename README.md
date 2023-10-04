@@ -27,3 +27,17 @@ We can do one better and use the `INSTALLFOLDER` variable.
 ```
 
 > :warning: When using folder variables, windows installer will automatically add the last trailing slash.
+
+
+## Episode 22 - Taking a Shortcut using WiX v4
+
+> :movie_camera: [Youtube](https://www.youtube.com/watch?v=U7MQCF5AZcw)
+
+We add a simple WinForms app which does the same thing as the console app. 
+This is an example to show-case shortcuts.
+
+```xml
+<File Source="WinFormsApp1.exe">
+    <Shortcut Directory="DesktopFolderb" Name="Deployment Dojo Windows Forms App 1" />
+</File>	
+```

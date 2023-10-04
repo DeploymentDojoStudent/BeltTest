@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+	<Fragment>
+		<ComponentGroup Id="WinFormsAppComponents" Directory="INSTALLFOLDER">
+			<Component>
+				<File Source="WinFormsApp1.exe" />				
+				<Shortcut Directory="DesktopFolder" Name="Deployment Dojo Windows Forms App 1" Advertise="yes" />
+			</Component>
+			<Component>
+				<File Source="WinFormsApp1.dll" />
+			</Component>
+			<Component>
+				<File Source="WinFormsApp1.runtimeconfig.json" />
+			</Component>
+		</ComponentGroup>
+	</Fragment>
+</Wix>
