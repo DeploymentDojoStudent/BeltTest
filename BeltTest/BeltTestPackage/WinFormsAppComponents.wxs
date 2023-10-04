@@ -9,7 +9,7 @@
 
 			<Component Id="DesktopIcon" Directory="DesktopFolder" Condition="ENABLEDESKTOPSHORTCUT">
 				<RegistryValue Root="HKCU" Key="SOFTWARE\BeltTest" Name="DesktopShortcutEnabled" Value="1" />
-				<Shortcut Directory="DesktopFolder" Name="Deployment Dojo Windows Forms App 1" Target="[#WindowsFormsApp1]" />
+				<Shortcut Directory="DesktopFolder" Name="Deployment Dojo Windows Forms App 1" Target="[#WindowsFormsApp1]" Icon="logo.exe" />
 			</Component>
 			
 			<Component>
