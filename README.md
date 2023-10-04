@@ -109,3 +109,8 @@ Condition="ENABLEDESKTOPSHORTCUT=1"
 ```
 
 The value supplied on the command line should now be '1' to enable the shortcut.
+
+
+## Episode 25 - At Your Service. Installing Windows Service with WiX v4.
+
+> :movie_camera: [Youtube](https://www.youtube.com/watch?v=vZRZeDOTPZQ)
