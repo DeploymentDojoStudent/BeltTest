@@ -46,3 +46,39 @@ This is an example to show-case shortcuts.
 
 > :movie_camera: [Youtube](https://www.youtube.com/watch?v=x-E7g5H_1TA)
 
+### Advertising
+
+It's possible to advertise an app. This means creating a shortcut for your app that installs on initial click.
+
+These shortcuts will also repair your program if files get deleted, but the repair will be localized to the feature the shortcut is in.
+
+```xml
+<Shortcut Directory="ProgramMenuFolder" Name="Deployment Dojo Windows Forms App 1" Advertise="yes" />
+```
+
+### Shortcut icon
+
+:speech_balloon: The `id` of the icon should have the same extension as the file it is pointing to.
+
+```xml
+<Component>
+	<File Source="WinFormsApp1.exe" />				
+	<Shortcut Directory="ProgramMenuFolder" Name="Deployment Dojo Windows Forms App 1" Advertise="yes" Icon="logo.exe" />
+</Component>
+
+<!-- Inside fragment -->
+<Icon Id="logo.exe" SourceFile="logo.ico" />
+```
+
+### Installer icon
+
+It's also possible to change the installer icon, but not the MSI icon.
+This icon will show up in the 'Add/Remove programs' window.
+
+Add following inside `package.wxs`:
+
+```xml
+<Property Id="ARPPRODUCTICON" Value="logo.exe" />
+
+<Icon Id="logo.exe" SourceFile="logo.ico" />
+```
