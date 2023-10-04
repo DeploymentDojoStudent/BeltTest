@@ -87,4 +87,5 @@ Add following inside `package.wxs`:
 
 > :movie_camera: [Youtube](https://www.youtube.com/watch?v=1kV4gk3tTzg)
 
+Each `Component` needs a `File` or a `RegistryValue`, otherwise it can't generate `KeyPath` values.
 
