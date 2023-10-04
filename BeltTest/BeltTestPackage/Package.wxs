@@ -5,12 +5,8 @@
 		<Property Id="ARPPRODUCTICON" Value="logo.exe" />
 		
 		<Feature Id="Main">
-			<Feature Id="ConsoleFeature">
-				<ComponentGroupRef Id="ConsoleAppComponents" />
-			</Feature>
-			<Feature Id="WinFormsFeature">
-				<ComponentGroupRef Id="WinFormsAppComponents" />
-			</Feature>
+			<ComponentGroupRef Id="ConsoleAppComponents" />
+			<ComponentGroupRef Id="WinFormsAppComponents" />
 		</Feature>
 	</Package>
 </Wix>
