@@ -5,5 +5,3 @@ object? customer = Registry.GetValue(@"HKEY_LOCAL_MACHINE\SOFTWARE\BeltTest", "C
 
 Console.WriteLine($"Welcome to the {edition} ConsoleApp1.");
 Console.WriteLine($"  Registered our {customer} customer.");
-
-Console.ReadKey();

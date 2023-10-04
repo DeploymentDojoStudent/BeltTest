@@ -4,7 +4,9 @@
 			<Component>
 				<File Source="ConsoleApp1.exe" />
 				<RegistryValue Root="HKLM" Key="SOFTWARE\BeltTest" Name="Edition" Value="Standard" />
-				<RegistryValue Root="HKLM" Key="SOFTWARE\BeltTest" Name="Customer" Value="Valued" />
+				<RegistryValue Root="HKLM" Key="SOFTWARE\BeltTest" Name="Customer" Value="valued" />
+
+				<Environment Name="PATH" System="yes" Value="[INSTALLFOLDER]" Action="set" Part="last" />
 			</Component>
 			<Component>
 				<File Source="ConsoleApp1.dll" />
