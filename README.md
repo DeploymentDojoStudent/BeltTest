@@ -82,3 +82,30 @@ Add following inside `package.wxs`:
 
 <Icon Id="logo.exe" SourceFile="logo.ico" />
 ```
+
+## Episode 24 - To Shortcut or Not to Shortcut? That is the Question for WiX v4.
+
+> :movie_camera: [Youtube](https://www.youtube.com/watch?v=1kV4gk3tTzg)
+
+Each `Component` needs a `File` or a `RegistryValue`, otherwise it can't generate `KeyPath` values.
+
+### Condition
+
+It's possible to install a `Component` through the `Condition` attribute.
+
+```xml
+<Component Id="DesktopIcon" Directory="DesktopFolder" Condition="ENABLEDESKTOPSHORTCUT">
+    <!-- content -->
+</Component>
+```
+
+When set from the command line like `msiexec /i setup.msi ENABLEDESKTOPSHORTCUT=anything`, this component will be installed.
+It does not matter what is set, only that it is set.
+
+If you want to enable it when it has a specific value, you can use following:
+
+```xml
+Condition="ENABLEDESKTOPSHORTCUT=1"
+```
+
+The value supplied on the command line should now be '1' to enable the shortcut.
