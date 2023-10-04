@@ -12,7 +12,6 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v3
-      # Checkout the code
 
     - name: Restore NuGet packages
       run: dotnet restore
@@ -22,16 +21,8 @@ jobs:
       shell: cmd 
       run: ./build.cmd
 
-    - name: Save Community Package
+    - name: Save Package
       uses: actions/upload-artifact@v3
       with:
-        name: community
-        path: ./BeltTest/CommunityPackage/bin/**
-
-    - name: Save Enterprise Package
-      uses: actions/upload-artifact@v3
-      with:
-        name: enterprise
-        path: ./BeltTest/EnterprisePackage/bin/**
-
-    
+        name: artifacts
+        path: ./BeltTest/BeltTestPackage/bin/**
