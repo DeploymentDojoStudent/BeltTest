@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build-goo", "build-goo", "{
 	ProjectSection(SolutionItems) = preProject
 		..\build.cmd = ..\build.cmd
 		..\.github\workflows\build.yml = ..\.github\workflows\build.yml
+		..\dojo.wsb = ..\dojo.wsb
+		..\dojostart.cmd = ..\dojostart.cmd
 	EndProjectSection
 EndProject
 Project("{B7DD6F7E-DEF8-4E67-B5B7-07EF123DB6F0}") = "BeltTestPackage", "BeltTestPackage\BeltTestPackage.wixproj", "{4EA69B58-2DEF-4296-B43E-A2A73B526045}"
