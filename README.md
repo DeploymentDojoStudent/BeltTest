@@ -82,3 +82,9 @@ Add following inside `package.wxs`:
 
 <Icon Id="logo.exe" SourceFile="logo.ico" />
 ```
+
+## Episode 24 - To Shortcut or Not to Shortcut? That is the Question for WiX v4.
+
+> :movie_camera: [Youtube](https://www.youtube.com/watch?v=1kV4gk3tTzg)
+
+
