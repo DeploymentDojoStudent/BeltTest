@@ -4,7 +4,7 @@
 		<ComponentGroup Id="WinFormsAppComponents" Directory="INSTALLFOLDER">
 			<Component>
 				<File Source="WinFormsApp1.exe" />				
-				<Shortcut Directory="DesktopFolder" Name="Deployment Dojo Windows Forms App 1" Advertise="yes" />
+				<Shortcut Directory="ProgramMenuFolder" Name="Deployment Dojo Windows Forms App 1" Advertise="yes" />
 			</Component>
 			<Component>
 				<File Source="WinFormsApp1.dll" />
