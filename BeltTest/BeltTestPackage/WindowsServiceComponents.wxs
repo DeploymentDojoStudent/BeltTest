@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+	<Fragment>
+		<ComponentGroup Id="WindowsServiceComponents" Directory="INSTALLFOLDER">
+			<Component>
+				<File Source="WindowsService1.exe" />
+				<ServiceInstall Name="DeploymentDojoCounting" Description="This is the description" DisplayName="~Deployment Dojo Counting Service" Type="ownProcess" Start="auto" ErrorControl="normal" />
+				<ServiceControl Name="DeploymentDojoCounting" Start="install" Stop="both" Remove="uninstall" />
+			</Component>
+
+			<Component Directory="RuntimeLibs">
+				<File Source="runtimes\win\lib\net7.0\System.Diagnostics.EventLog.dll" />
+			</Component>
+			<Component Directory="RuntimeLibs">
+				<File Source="runtimes\win\lib\net7.0\System.Diagnostics.EventLog.Messages.dll" />
+			</Component>
+			<Component Directory="RuntimeLibs">
+				<File Source="runtimes\win\lib\net7.0\System.ServiceProcess.ServiceController.dll" />
+			</Component>			
+			<Component>
+				<File Source="appsettings.Development.json" />
+			</Component>
+			<Component>
+				<File Source="appsettings.json" />
+			</Component>
+			<Component>
+				<File Source="Microsoft.Extensions.Configuration.Abstractions.dll" />
+			</Component>
+			<Component>
+				<File Source="Microsoft.Extensions.Configuration.Binder.dll" />
+			</Component>
+			<Component>
+				<File Source="Microsoft.Extensions.Configuration.CommandLine.dll" />
+			</Component>
+			<Component>
+				<File Source="Microsoft.Extensions.Configuration.dll" />
+			</Component>
+			<Component>
+				<File Source="Microsoft.Extensions.Configuration.EnvironmentVariables.dll" />
+			</Component>
+			<Component>
+				<File Source="Microsoft.Extensions.Configuration.FileExtensions.dll" />
+			</Component>
+			<Component>
+				<File Source="Microsoft.Extensions.Configuration.Json.dll" />
+			</Component>
+			<Component>
+				<File Source="Microsoft.Extensions.Configuration.UserSecrets.dll" />
+			</Component>
+			<Component>
+				<File Source="Microsoft.Extensions.DependencyInjection.Abstractions.dll" />
+			</Component>
+			<Component>
+				<File Source="Microsoft.Extensions.DependencyInjection.dll" />
+			</Component>
+			<Component>
+				<File Source="Microsoft.Extensions.FileProviders.Abstractions.dll" />
+			</Component>
+			<Component>
+				<File Source="Microsoft.Extensions.FileProviders.Physical.dll" />
+			</Component>
+			<Component>
+				<File Source="Microsoft.Extensions.FileSystemGlobbing.dll" />
+			</Component>
+			<Component>
+				<File Source="Microsoft.Extensions.Hosting.Abstractions.dll" />
+			</Component>
+			<Component>
+				<File Source="Microsoft.Extensions.Hosting.dll" />
+			</Component>
+			<Component>
+				<File Source="Microsoft.Extensions.Hosting.WindowsServices.dll" />
+			</Component>
+			<Component>
+				<File Source="Microsoft.Extensions.Logging.Abstractions.dll" />
+			</Component>
+			<Component>
+				<File Source="Microsoft.Extensions.Logging.Configuration.dll" />
+			</Component>
+			<Component>
+				<File Source="Microsoft.Extensions.Logging.Console.dll" />
+			</Component>
+			<Component>
+				<File Source="Microsoft.Extensions.Logging.Debug.dll" />
+			</Component>
+			<Component>
+				<File Source="Microsoft.Extensions.Logging.dll" />
+			</Component>
+			<Component>
+				<File Source="Microsoft.Extensions.Logging.EventLog.dll" />
+			</Component>
+			<Component>
+				<File Source="Microsoft.Extensions.Logging.EventSource.dll" />
+			</Component>
+			<Component>
+				<File Source="Microsoft.Extensions.Options.ConfigurationExtensions.dll" />
+			</Component>
+			<Component>
+				<File Source="Microsoft.Extensions.Options.dll" />
+			</Component>
+			<Component>
+				<File Source="Microsoft.Extensions.Primitives.dll" />
+			</Component>
+			<Component>
+				<File Source="System.Diagnostics.EventLog.dll" />
+			</Component>
+			<Component>
+				<File Source="System.ServiceProcess.ServiceController.dll" />
+			</Component>
+			<Component>
+				<File Source="WindowsService1.deps.json" />
+			</Component>
+			<Component>
+				<File Source="WindowsService1.dll" />
+			</Component>
+			
+			<Component>
+				<File Source="WindowsService1.pdb" />
+			</Component>
+			<Component>
+				<File Source="WindowsService1.runtimeconfig.json" />
+			</Component>
+		</ComponentGroup>
+	</Fragment>
+</Wix>
