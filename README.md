@@ -154,3 +154,18 @@ Following xml code is used to remove a file:
 ```xml
 <RemoveFile Name="WindowsService1.txt" On="both" />
 ```
+
+## Local account
+
+Use the local service account to only access this machine. This is better than running as admin.
+
+```xml
+<ServiceInstall 
+    Account="NT AUTHORITY\LocalService"
+    Name="DeploymentDojoCounting"
+    Description="This is the description" 
+    DisplayName="~Deployment Dojo Counting Service" 
+    Type="ownProcess" 
+    Start="auto" 
+    ErrorControl="normal" />
+```
