@@ -114,3 +114,15 @@ The value supplied on the command line should now be '1' to enable the shortcut.
 ## Episode 25 - At Your Service. Installing Windows Service with WiX v4.
 
 > :movie_camera: [Youtube](https://www.youtube.com/watch?v=vZRZeDOTPZQ)
+
+### Installing the service
+
+```xml
+<ServiceInstall Name="DeploymentDojoCounting" DisplayName="~Deployment Dojo Counting Service" Type="ownProcess" Start="auto" ErrorControl="normal" />
+```
+
+### Controlling the service from the (un)installer
+
+```xml
+<ServiceControl Name="DeploymentDojoCounting" Start="install" Stop="uninstall" Remove="uninstall" />
+```
