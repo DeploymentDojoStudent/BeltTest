@@ -131,3 +131,4 @@ The value supplied on the command line should now be '1' to enable the shortcut.
 
 > :movie_camera: [Youtube](https://www.youtube.com/watch?v=UJrD-9N_PVg)
 
+This video is mostly an AMA video with stories about the history of WiX.
