@@ -6,7 +6,9 @@
 				<File Source="WindowsService1.exe" />
 				<ServiceInstall Name="DeploymentDojoCounting" Description="This is the description" DisplayName="~Deployment Dojo Counting Service" Type="ownProcess" Start="auto" ErrorControl="normal" />
 				<ServiceControl Name="DeploymentDojoCounting" Start="install" Stop="both" Remove="uninstall" />
-			</Component>
+
+				<RemoveFile Name="WindowsService1.txt" On="both" />
+			</Component>					
 
 			<Component Directory="RuntimeLibs">
 				<File Source="runtimes\win\lib\net7.0\System.Diagnostics.EventLog.dll" />

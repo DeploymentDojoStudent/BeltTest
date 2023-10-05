@@ -2,13 +2,13 @@
 
 ## Episode 20 - The New Dojo Development Flow: WiX Toolset + GitHub
 
-> :movie_camera: [Youtube](https://www.youtube.com/watch?v=M0i9Ug4pjyU)
+> :movie_camera: [YouTube](https://www.YouTube.com/watch?v=M0i9Ug4pjyU)
 
 In this episode the `BeltTest` project gets set up for later development. See branch `ep20` for work done in this episode.
 
 ## Episode 21 - Enhancing the Environment with WiX v4
 
-> :movie_camera: [Youtube](https://www.youtube.com/watch?v=0ApAkl4HKxw)
+> :movie_camera: [YouTube](https://www.YouTube.com/watch?v=0ApAkl4HKxw)
 
 * Fix the `build.yml` to save the artifacts of the `BeltTestPackage`
 
@@ -31,7 +31,7 @@ We can do one better and use the `INSTALLFOLDER` variable.
 
 ## Episode 22 - Taking a Shortcut using WiX v4
 
-> :movie_camera: [Youtube](https://www.youtube.com/watch?v=U7MQCF5AZcw)
+> :movie_camera: [YouTube](https://www.YouTube.com/watch?v=U7MQCF5AZcw)
 
 We add a simple WinForms app which does the same thing as the console app. 
 This is an example to show-case shortcuts.
@@ -44,7 +44,7 @@ This is an example to show-case shortcuts.
 
 ## Episode 23 - A less short look into Advertised Shortcuts using WiX v4
 
-> :movie_camera: [Youtube](https://www.youtube.com/watch?v=x-E7g5H_1TA)
+> :movie_camera: [YouTube](https://www.YouTube.com/watch?v=x-E7g5H_1TA)
 
 ### Advertising
 
@@ -85,7 +85,7 @@ Add following inside `package.wxs`:
 
 ## Episode 24 - To Shortcut or Not to Shortcut? That is the Question for WiX v4.
 
-> :movie_camera: [Youtube](https://www.youtube.com/watch?v=1kV4gk3tTzg)
+> :movie_camera: [YouTube](https://www.YouTube.com/watch?v=1kV4gk3tTzg)
 
 Each `Component` needs a `File` or a `RegistryValue`, otherwise it can't generate `KeyPath` values.
 
@@ -113,7 +113,7 @@ The value supplied on the command line should now be '1' to enable the shortcut.
 
 ## Episode 25 - At Your Service. Installing Windows Service with WiX v4.
 
-> :movie_camera: [Youtube](https://www.youtube.com/watch?v=vZRZeDOTPZQ)
+> :movie_camera: [YouTube](https://www.YouTube.com/watch?v=vZRZeDOTPZQ)
 
 ### Installing the service
 
@@ -129,6 +129,43 @@ The value supplied on the command line should now be '1' to enable the shortcut.
 
 ## Episode 26 - AMA - The WiX v4 RTM Celebration
 
-> :movie_camera: [Youtube](https://www.youtube.com/watch?v=UJrD-9N_PVg)
+> :movie_camera: [YouTube](https://www.YouTube.com/watch?v=UJrD-9N_PVg)
 
 This video is mostly an AMA video with stories about the history of WiX.
+
+## Episode 27 - Cleaning up the mess we left with WiX v4.
+
+> :movie_camera: [YouTube](https://www.youtube.com/watch?v=6stVQvcIdzA)
+
+## Stuff left behind
+
+There are 3 types of data:
+1. Application data
+2. User data
+3. Configuration data
+
+The counting file in our project is 'Application data'. This should be removed
+on uninstall. 'User data' should not be removed on uninstall.
+
+## Removing files
+
+Following xml code is used to remove a file:
+
+```xml
+<RemoveFile Name="WindowsService1.txt" On="both" />
+```
+
+## Local account
+
+Use the local service account to only access this machine. This is better than running as admin.
+
+```xml
+<ServiceInstall 
+    Account="NT AUTHORITY\LocalService"
+    Name="DeploymentDojoCounting"
+    Description="This is the description" 
+    DisplayName="~Deployment Dojo Counting Service" 
+    Type="ownProcess" 
+    Start="auto" 
+    ErrorControl="normal" />
+```
