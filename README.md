@@ -126,3 +126,9 @@ The value supplied on the command line should now be '1' to enable the shortcut.
 ```xml
 <ServiceControl Name="DeploymentDojoCounting" Start="install" Stop="uninstall" Remove="uninstall" />
 ```
+
+## Episode 26 - AMA - The WiX v4 RTM Celebration
+
+> :movie_camera: [Youtube](https://www.youtube.com/watch?v=UJrD-9N_PVg)
+
+This video is mostly an AMA video with stories about the history of WiX.
