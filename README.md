@@ -137,3 +137,20 @@ This video is mostly an AMA video with stories about the history of WiX.
 
 > :movie_camera: [YouTube](https://www.youtube.com/watch?v=6stVQvcIdzA)
 
+## Stuff left behind
+
+There are 3 types of data:
+1. Application data
+2. User data
+3. Configuration data
+
+The counting file in our project is 'Application data'. This should be removed
+on uninstall. 'User data' should not be removed on uninstall.
+
+## Removing files
+
+Following xml code is used to remove a file:
+
+```xml
+<RemoveFile Name="WindowsService1.txt" On="both" />
+```
