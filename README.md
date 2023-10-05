@@ -135,9 +135,9 @@ This video is mostly an AMA video with stories about the history of WiX.
 
 ## Episode 27 - Cleaning up the mess we left with WiX v4.
 
-> :movie_camera: [YouTube](https://www.youtube.com/watch?v=6stVQvcIdzA)
 
-## Stuff left behind
+
+### Stuff left behind
 
 There are 3 types of data:
 1. Application data
@@ -147,7 +147,7 @@ There are 3 types of data:
 The counting file in our project is 'Application data'. This should be removed
 on uninstall. 'User data' should not be removed on uninstall.
 
-## Removing files
+### Removing files
 
 Following xml code is used to remove a file:
 
@@ -155,7 +155,7 @@ Following xml code is used to remove a file:
 <RemoveFile Name="WindowsService1.txt" On="both" />
 ```
 
-## Local account
+### Local account
 
 Use the local service account to only access this machine. This is better than running as admin.
 
@@ -169,3 +169,8 @@ Use the local service account to only access this machine. This is better than r
     Start="auto" 
     ErrorControl="normal" />
 ```
+
+## Episode 28: Permission to come aboard using the LocalService in WiX v4
+
+> :movie_camera: [YouTube](https://www.youtube.com/watch?v=DslwxSg5fPw)
+
