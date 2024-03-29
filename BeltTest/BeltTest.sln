@@ -17,7 +17,12 @@ Project("{B7DD6F7E-DEF8-4E67-B5B7-07EF123DB6F0}") = "BeltTestPackage", "BeltTest
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsApp1", "WinFormsApp1\WinFormsApp1.csproj", "{7B09B333-4209-479B-B93D-8EDCA11F4C01}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsService1", "WindowsService1\WindowsService1.csproj", "{45C7A91C-0156-4F8D-BFA2-4E28F167AC96}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindowsService1", "WindowsService1\WindowsService1.csproj", "{45C7A91C-0156-4F8D-BFA2-4E28F167AC96}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1F440652-5CF4-433A-99B2-BA1861F196C6}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

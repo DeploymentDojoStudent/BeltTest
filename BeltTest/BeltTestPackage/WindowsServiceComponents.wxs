@@ -11,13 +11,13 @@
 			</Component>					
 
 			<Component Directory="RuntimeLibs">
-				<File Source="runtimes\win\lib\net7.0\System.Diagnostics.EventLog.dll" />
+				<File Source="runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll" />
 			</Component>
 			<Component Directory="RuntimeLibs">
-				<File Source="runtimes\win\lib\net7.0\System.Diagnostics.EventLog.Messages.dll" />
+				<File Source="runtimes\win\lib\net8.0\System.Diagnostics.EventLog.Messages.dll" />
 			</Component>
 			<Component Directory="RuntimeLibs">
-				<File Source="runtimes\win\lib\net7.0\System.ServiceProcess.ServiceController.dll" />
+				<File Source="runtimes\win\lib\net8.0\System.ServiceProcess.ServiceController.dll" />
 			</Component>			
 			<Component>
 				<File Source="appsettings.Development.json" />
