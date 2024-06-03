@@ -135,7 +135,7 @@ This video is mostly an AMA video with stories about the history of WiX.
 
 ## Episode 27 - Cleaning up the mess we left with WiX v4.
 
-
+> :movie_camera: [YouTube](https://www.youtube.com/watch?v=6stVQvcIdzA)
 
 ### Stuff left behind
 
