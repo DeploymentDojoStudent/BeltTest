@@ -4,7 +4,10 @@
 		<ComponentGroup Id="WindowsServiceComponents" Directory="INSTALLFOLDER">
 			<Component>
 				<File Source="WindowsService1.exe" />
-				<ServiceInstall Name="DeploymentDojoCounting" Description="This is the description" DisplayName="~Deployment Dojo Counting Service" Type="ownProcess" Start="auto" ErrorControl="normal" />
+				<ServiceInstall Name="DeploymentDojoCounting" Description="This is the description" 
+                        DisplayName="~Deployment Dojo Counting Service" 
+                        Type="ownProcess" Start="auto" ErrorControl="normal"
+                        Account="NT AUTHORITY\LocalService"/>
 				<ServiceControl Name="DeploymentDojoCounting" Start="install" Stop="both" Remove="uninstall" />
 
 				<RemoveFile Name="WindowsService1.txt" On="both" />
